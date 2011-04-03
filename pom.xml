@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.qi4j.swoosh</groupId>
+    <artifactId>qi4j-swoosh</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <name>Qi4J Swoosh</name>
+    <description>
+        Pax Exam based swoosh harness for Qi4j
+    </description>
+
+    <scm>
+        <connection>scm:git:git://github.com/tonit/qi4j-swoosh.git</connection>
+        <developerConnection>${release-qi4j-swoosh-altGitURL}</developerConnection>
+        <url>http://github.com/tonit/qi4j-swoosh/tree/master</url>
+    </scm>
+
+    <properties>
+        <release-qi4j-swoosh-altGitURL>scm:git:ssh://git@github.com/tonit/qi4j-swoosh.git</release-qi4j-swoosh-altGitURL>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <dependency.exam.version>2.0.0-M2-SNAPSHOT</dependency.exam.version>
+        <dependency.junit.version>4.8.1</dependency.junit.version>
+
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.ops4j.pax.exam</groupId>
+            <artifactId>pax-exam-swoosh</artifactId>
+            <version>${dependency.exam.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${dependency.junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+         <dependency>
+            <groupId>org.ops4j.pax.exam</groupId>
+            <artifactId>pax-exam-container-native</artifactId>
+            <version>${dependency.exam.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.6.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>org.apache.felix.framework</artifactId>
+            <version>3.2.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <developers>
+        <developer>
+            <id>tonit</id>
+            <name>Toni Menzel</name>
+            <email>toni@okidokiteam.com</email>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>UTC+1</timezone>
+        </developer>
+    </developers>
+</project>
+
