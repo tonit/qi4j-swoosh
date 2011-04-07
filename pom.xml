@@ -20,7 +20,7 @@
     <properties>
         <release-qi4j-swoosh-altGitURL>scm:git:ssh://git@github.com/tonit/qi4j-swoosh.git</release-qi4j-swoosh-altGitURL>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <dependency.exam.version>2.0.0-M2-SNAPSHOT</dependency.exam.version>
+        <dependency.exam.version>2.0.0-RC3-SNAPSHOT</dependency.exam.version>
         <dependency.junit.version>4.8.1</dependency.junit.version>
 
     </properties>
