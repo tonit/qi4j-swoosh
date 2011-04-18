@@ -20,17 +20,36 @@
     <properties>
         <release-qi4j-swoosh-altGitURL>scm:git:ssh://git@github.com/tonit/qi4j-swoosh.git</release-qi4j-swoosh-altGitURL>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <dependency.exam.version>2.0.0-RC3-SNAPSHOT</dependency.exam.version>
+        <dependency.exam.version>2.0.0-RC4</dependency.exam.version>
         <dependency.junit.version>4.8.1</dependency.junit.version>
 
     </properties>
 
     <dependencies>
-        <dependency>
+         <dependency>
             <groupId>org.ops4j.pax.exam</groupId>
-            <artifactId>pax-exam-swoosh</artifactId>
+            <artifactId>pax-exam</artifactId>
             <version>${dependency.exam.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.ops4j.pax.exam</groupId>
+            <artifactId>pax-exam-link-mvn</artifactId>
+            <version>${dependency.exam.version}</version>
+            <scope>test</scope>
+        </dependency>
+         <dependency>
+            <groupId>org.ops4j.pax.exam</groupId>
+            <artifactId>pax-exam-player</artifactId>
+            <version>${dependency.exam.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.ops4j.pax.exam</groupId>
+            <artifactId>pax-exam-testforge</artifactId>
+            <version>${dependency.exam.version}</version>
+            <scope>testforge</scope>
+        </dependency>
+      
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -39,7 +58,7 @@
         </dependency>
          <dependency>
             <groupId>org.ops4j.pax.exam</groupId>
-            <artifactId>pax-exam-container-native</artifactId>
+            <artifactId>pax-exam-container-paxrunner</artifactId>
             <version>${dependency.exam.version}</version>
             <scope>test</scope>
         </dependency>
